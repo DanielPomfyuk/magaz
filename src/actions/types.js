@@ -1,0 +1,2 @@
+export const SET_CURRENT_GENDER = 'SET_CURRENT_GENDER';
+
