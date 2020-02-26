@@ -1,8 +1,8 @@
 import React from "react"
-import NavbarData from "./NavbarData"
+import NavbarData from "../mokData/NavbarData"
 import { render } from "@testing-library/react";
 import NavbarButton from "./NavbarButton";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 class Navbar extends React.Component {
     constructor() {
         super()

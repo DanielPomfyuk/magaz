@@ -1,13 +1,14 @@
 import React from "react";
 import Item from "./Item";
-import "./Item.css";
 import { connect } from "react-redux";
-import { setCurrentGender } from "./actions/genderAction"
+import { setCurrentGender } from "../actions/genderAction"
 import { useSelector, useDispatch } from "react-redux";
-import genderReducer from "./reducers/genderReducer";
+import genderReducer from "../reducers/genderReducer";
+import itemsData from "../mokData/ItemsData";
 
 function ItemsCollection() {
-    const items = [<Item />, <Item />, <Item />, <Item />]
+    const items = itemsData.map(item => <Item {...item} />)
+    console.log("HEREEEE" + { items })
     const dispatch = useDispatch();
     const gender = useSelector(state => state.genderReducer.currentGender)
     return (<div className="itemsCollection">

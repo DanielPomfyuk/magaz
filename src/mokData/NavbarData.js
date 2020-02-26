@@ -1,6 +1,7 @@
 const NavbarData = [
     {
         name: "men",
+        gender: "men",
         value: [{
             key: "kakashka",
             link: "https://macos.livejournal.com/1694264.html"
@@ -15,6 +16,7 @@ const NavbarData = [
         name: "women",
         value: [{
             key: "gavno",
+            gender: "men",
             link: "https://macos.livejournal.com/1694264.html"
         },
         {
@@ -25,6 +27,7 @@ const NavbarData = [
     },
     {
         name: "about",
+        gender: "none",
         value: [{
             key: "ebalo",
             link: "https://macos.livejournal.com/1694264.html"
