@@ -14,6 +14,7 @@ const NavbarData = [
     },
     {
         name: "women",
+        gender: "women",
         value: [{
             key: "gavno",
             gender: "men",

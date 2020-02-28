@@ -7,13 +7,11 @@ import genderReducer from "../reducers/genderReducer";
 import itemsData from "../mokData/ItemsData";
 
 function ItemsCollection() {
-    const items = itemsData.map(item => <Item {...item} />)
-    console.log("HEREEEE" + { items })
-    const dispatch = useDispatch();
     const gender = useSelector(state => state.genderReducer.currentGender)
+    const itemsWithCorrectGender = itemsData.filter(item => item.gender === gender)
+    const items = itemsWithCorrectGender.map(item => <Item {...item} />)
     return (<div className="itemsCollection">
         <h1>{gender}</h1>
-        <button onClick={() => dispatch(setCurrentGender())}>lalal</button>
         {items}
     </div>)
 }

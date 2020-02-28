@@ -1,7 +1,7 @@
 import { SET_CURRENT_GENDER } from "./types"
-export const setCurrentGender = () => {
+export const setCurrentGender = (gender) => {
     return ({
         type: 'SET_CURRENT_GENDER',
-        gender: "men"
+        gender: gender
     })
 }
