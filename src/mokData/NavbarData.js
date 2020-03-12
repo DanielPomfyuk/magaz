@@ -27,8 +27,15 @@ const NavbarData = [{
     ]
 },
 {
+    name: "home",
+    gender: "none",
+    link: "/home",
+    value: []
+},
+{
     name: "about",
     gender: "none",
+    link: "/home",
     value: [{
         key: "ebalo",
         link: "https://macos.livejournal.com/1694264.html"

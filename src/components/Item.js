@@ -2,21 +2,13 @@ import React from "react";
 import "../styles/Item.css";
 
 function Item(props) {
-    return (<div className="col-sm col-md-6 col-lg-3 ftco-animate">
-        <div className="product">
-            <a href="#" className="img-prod"><img className="img-fluid" src={props.photo} /></a>
-            <div className="text py-3 px-3">
-                <h3><a href="#">{props.name}</a></h3>
-                <div className="d-flex">
-                    <div className="pricing">
-                        <p className="price"><span>${props.price}.00</span></p>
-                    </div>
-                </div>
-                <hr />
-                <p className="bottom-area d-flex">
-                    <a> Add to cart</a>
-                </p>
-            </div>
+    return (<div className="productCard">
+        <div className="image-container">
+            <img className="productImage" src={props.photo}></img>
+        </div>
+        <div className="container">
+            <h4 className="productName">{props.name}</h4>
+            <h5 className="productPrice">${props.price}.00</h5>
         </div>
     </div>)
 }

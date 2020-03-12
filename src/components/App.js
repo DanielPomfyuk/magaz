@@ -6,6 +6,7 @@ import '../styles/App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "../Store"
+import Footer from "./Footer"
 
 function App() {
     return (< Provider store={store} >
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/items"><ItemsCollection /></Route>
                 <Route path="/"><Home /></Route>
             </Switch>
+            <Footer />
         </Router>
     </Provider >
     )

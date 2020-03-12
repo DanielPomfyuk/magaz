@@ -11,12 +11,6 @@ function ItemsCollection() {
     const gender = useSelector(state => state.genderReducer.currentGender)
     const itemsWithCorrectGender = itemsData.filter(item => item.gender === gender)
     const items = itemsWithCorrectGender.map(item => <Item {...item} />)
-    return (<section className="ftco-section bg-light">
-        <div class="container-fluid">
-            <div className="row">
-                {items}
-            </div>
-        </div>
-    </section>)
+    return (<div className="collection-container">{items}</div>)
 }
 export default ItemsCollection;
