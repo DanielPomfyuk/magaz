@@ -2,20 +2,31 @@ body{
     text-align: center;
     font-family: 'Spartan',sans-serif;
 }
-.saleBanner{
+.banner{
     margin: 50px auto;
     width: 90%;
     height: 200px;
-    background-color: coral;
     position: relative;
 }
-.word{
+.sale{
+    background-color: salmon;
+}
+.delivery{
+    background-color: #333;
+    color: aliceblue;
+    text-transform: uppercase;
     justify-content: center;
     display: flex;
     align-items: center;
-    text-decoration: line-through;
     font-style: italic;
-    font-weight: bold;
+}
+.word{
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    text-decoration: line-through;
     position: absolute;
     left: 40%;
     top: 40%;
