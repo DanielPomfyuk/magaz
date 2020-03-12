@@ -1,6 +1,20 @@
+
 .footer{
-    position:fixed;
-    width: 100%;
+    flex-shrink: 0;
+    background-color: rgba(242, 242, 250, 0.925);
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    background-color: brown;
+    height: 60px;
+    width: 100%;
+}
+
+.phantom {
+  display: flex;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
 }

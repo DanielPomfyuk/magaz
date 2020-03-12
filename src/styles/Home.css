@@ -2,9 +2,36 @@ body{
     text-align: center;
     font-family: 'Spartan',sans-serif;
 }
+.saleBanner{
+    margin: 50px auto;
+    width: 90%;
+    height: 200px;
+    background-color: coral;
+    position: relative;
+}
+.word{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    transition: all .2s ease-in-out;
+}
+.word:hover{
+    transform: scale(1.1);
+}
+
 .imageCollection{
-    margin: 0 auto;
+    margin: 50px auto;
     width:90%;
+     
 }
 .imageContainer{
     width: 400px;
@@ -12,6 +39,10 @@ body{
     position: relative;
     display: inline-block;
     margin: 10px;
+    transition: all .2s ease-in-out;
+}
+.imageContainer:hover{
+     transform: scale(1.1);
 }
 .imageContainer img{
     width: 100%;

@@ -12,9 +12,12 @@ class Home extends React.Component {
     }
     render() {
         const pictureComponents = this.state.pictures.map(picture => <HomePicture {...picture} />)
-        return (<div className="imageCollection">
-            {pictureComponents}
-        </div>)
+        return (<React.Fragment>
+            <div className="saleBanner"><div className="word"><h1>SALE</h1></div></div>
+            <div className="imageCollection">
+                {pictureComponents}
+            </div>
+        </React.Fragment>)
     }
 }
 export default Home;

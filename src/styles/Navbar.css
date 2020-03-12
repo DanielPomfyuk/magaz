@@ -24,6 +24,7 @@
 }
 
 .dropdown-content {
+  border-radius: 15px;
   display: none;
   float: left;
   position: absolute;
